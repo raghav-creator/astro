@@ -1,0 +1,64 @@
+@import './../base/variable';
+
+footer {
+  background-color: $light-brown;
+  color: $white;
+}
+.footer {
+  &-logo {
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+  }
+  h5 {
+    font-weight: 700;
+  }
+  &-logo {
+    padding-bottom: 2rem;
+  }
+  
+  li {
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 10px;
+
+    a {
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        color: $dark-yellow;
+      }
+    }
+  }
+
+  &-address{
+    &::before {
+      content: url('./../../../../public/Region.svg') ;
+    }
+  }
+  &-phone{
+    &::before {
+      content: url('./../../../../public/Phone.svg') ;
+    }
+  }
+  &-email{
+    &::before {
+      content: url('./../../../../public/Mail.svg') ;
+    }
+  }
+  &-middle {
+    position: relative;
+    border-left: 1px solid $white;
+    border-right: 1px solid $white;
+
+    @include media-breakpoint-down(sm) {
+      border: none;
+    }
+  }
+  &-social-links {
+    li {
+      padding-right: 1rem;
+    }
+  }
+}
