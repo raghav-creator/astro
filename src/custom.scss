@@ -1,7 +1,8 @@
-// Override default variables before the import
-// $body-bg: #000;
 
 // Import Bootstrap and its default variables
+body 
+{
+    overflow-x:hidden;
+}
 @import '~bootstrap/scss/bootstrap.scss';
-@import './Assets/sass/component/header';
-@import './Assets/sass/component/footer';
+@import './Assets/sass/component/home';
