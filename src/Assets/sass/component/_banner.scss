@@ -25,6 +25,7 @@
                 background: linear-gradient(180deg, #DEB94E 0%, #F8EAA1 33.68%, #F8E998 44.1%, #DDB84E 100%);
                 padding: 0.2rem 1.5rem 0.2rem 1.5rem;
                 border-radius: 25px; 
+                border: 0;
                 display: flex;
                 &::before {
                     content: url('./../../../../public/messages.png');
@@ -35,6 +36,7 @@
 
             .button-call {
                 font-size: 12px;
+                border: 0;
                 color: $black;
                 margin-right: 1rem;
                 position: relative;
@@ -55,6 +57,7 @@
     }
 
     .banner-wrap-image {
+        padding-right:4rem;
         img {
             height: 450px;
             width: 100%;
