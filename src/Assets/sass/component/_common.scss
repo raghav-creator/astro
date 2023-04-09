@@ -1,0 +1,22 @@
+@import './../base/variable';
+
+.heading {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 3px;
+    background-color: red;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.para {
+  font-size: 1.5rem;
+  text-align: center;
+  color: $gray;
+}
