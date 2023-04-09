@@ -18,10 +18,6 @@ const Home=()=>
   <Banner />
   <Astrologer />
   <AstrologerList />
-  <UsercardSlider />
-  <TestimonialSlider />
-  <Astrologer />
-  <AstrologerList />
   <CTA />
   <UsercardSlider />
   <TestimonialSlider />
