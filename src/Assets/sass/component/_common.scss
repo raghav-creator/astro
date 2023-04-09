@@ -1,0 +1,47 @@
+@import "./../base/variable";
+
+.heading {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 3px;
+    background-color: $red;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.para {
+  font-size: 1.5rem;
+  text-align: center;
+  color: $gray;
+}
+
+.subheading {
+  display: inline-block;
+  position: relative;
+  color: $dark-grey;
+
+  &::before,
+  &::after {
+    content: "";
+    height: 3px;
+    background-color: $red;
+    position: absolute;
+    transform: translateY(50%);
+    top: 50%;
+    width: 75px;
+  }
+
+  &::before {
+    left: -100px;
+  }
+
+  &::after {
+    right: -100px;
+  }
+}

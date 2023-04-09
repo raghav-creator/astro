@@ -1,0 +1,41 @@
+@import './../base/variable';
+
+.accordion {
+  &-item {
+    border: none;
+  }
+  &-button {
+    font-size: 24px;
+    font-weight: 600;
+    color: #605F60;
+    border-bottom: 1px solid #ccc;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid #ccc;
+      box-shadow: none;
+    }
+    &::after {
+      background-image: url('./../../../../public/blackarrow.svg');
+      padding: 1rem;
+      border: 2px solid;
+      border-radius: 50%;
+      background-position: 50% 43%;
+      height: 45px;
+      width: 45px;
+      transform: rotate(180deg);
+    }
+    &:not(.collapsed)::after {
+      background-image: url('./../../../../public/blackarrow.svg');
+      transform: unset;
+    }
+  }
+  &-body {
+    background-color: #F5F5F5;
+    font-size: 20px;
+  }
+}
+.accordion-button:not(.collapsed) {
+  color: #605F60;
+  background-color: $white;
+}
