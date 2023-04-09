@@ -14,6 +14,8 @@ const Home=()=>
   <AstrologerList />
   <UsercardSlider />
   <TestimonialSlider />
+  <Astrologer />
+  <AstrologerList />
   <Footer />
   </div>;
 }
