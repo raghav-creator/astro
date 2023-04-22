@@ -4,7 +4,6 @@ import Footer from './../shared/footer';
 import Banner from './banner';
 import Astrologer from './astrologer';
 import AstrologerList from './astrologerlist';
-import TestimonialSlider from './../shared/slider/testimonial';
 import UsercardSlider from './../shared/slider/usercard';
 import Heading from '../shared/common/heading';
 import Paragraph from '../shared/common/paragraph';
@@ -20,7 +19,6 @@ const Home=()=>
   <AstrologerList />
   <CTA />
   <UsercardSlider />
-  <TestimonialSlider />
   <div className='container'>
   <Heading title="What is Astrology?" />
   <Paragraph className="text-left" paragraph="Lorem ipsum dolor sit amet consectetur. Tempus cursus feugiat eu sed sem pulvinar. Eu ac in accumsan faucibus ac pulvinar donec erat habitant. Nulla dictum sociis dolor gravida ac sit. In lorem ac lorem fames id quam curabitur metus. Felis odio fermentum platea eget. Est aliquet aliquet viverra nec ullamcorper. Consectetur pharetra vitae integer sociis hac nunc pharetra. Facilisi nunc adipiscing aliquam ut ut bibendum molestie sem augue. Lacus curabitur donec arcu vehicula mattis donec sed.
