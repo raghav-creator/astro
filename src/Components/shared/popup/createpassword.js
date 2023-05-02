@@ -1,14 +1,15 @@
+
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-const Login = ({loginClose,loginshow,forgotpassShow}) => {
+const Createpassword = ({passwordClose,passwordshow}) => {
 
   return (
     <>
-      <Modal show={loginshow} onHide={loginClose}>
-      <div className='signpopup'>
+      <Modal show={passwordshow} onHide={passwordClose}>
+      <div className='signpopup password'>
           <div className="content">
             <div className='left-content'>
               <div className="logo"><img src="./logo.svg" alt="logo" width="100%" /></div>
@@ -26,29 +27,26 @@ const Login = ({loginClose,loginshow,forgotpassShow}) => {
             </div>
             <div className='right-content'>
               <div className="content-wrap">
-                <h3>Login</h3>
-                <p><span>Now consult your favorite Astrologer</span></p>
+                <h3>Create Password</h3>
+                <p><span>At Least 6 Alpha Numeric Characters</span></p>
                 <form>
                   <div className='form'>
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                      <Form.Label>Enter Your Email ID or Phone Number</Form.Label>
+                    <Form.Group className="form-wrap" controlId="exampleForm.ControlInput1">
+                      <Form.Label>Pasword</Form.Label>
                       <Form.Control type="email"  />
                       
                       
-                      <Form.Label>Password</Form.Label>
+                      <Form.Label>Confirm Password</Form.Label>
                       <Form.Control type="password"  />
-                      <div class="forgot-link">
-                        <a href="#" onClick={forgotpassShow}>Forgot Password?</a>
-                      </div>
+                      
                       <div className='continue-btn'> <Button variant="danger" size="lg">
-                        Continue
-                        <span><img src='./circle-right.png' /></span>
+                        Submit
                       </Button>
                       </div>
                     </Form.Group>
                   </div>
                 </form>
-                <span className='close-btn' onClick={loginClose}>X</span>
+                <span className='close-btn' onClick={passwordClose}>X</span>
             </div>
           </div>
         </div>
@@ -58,4 +56,4 @@ const Login = ({loginClose,loginshow,forgotpassShow}) => {
   );
 }
 
-export default Login;
+export default Createpassword;

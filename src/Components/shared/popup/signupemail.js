@@ -3,11 +3,11 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-const Signup = ({ signClose, signshow }) => {
+const Signupemail = ({ signemailClose, signemailshow,signShow }) => {
 
   return (
     <>
-      <Modal show={signshow} onHide={signClose}>
+      <Modal show={signemailshow} onHide={signemailClose}>
         <div className='signpopup'>
           <div className="content">
             <div className='left-content'>
@@ -28,21 +28,24 @@ const Signup = ({ signClose, signshow }) => {
               <div className="content-wrap">
                 <h3>Sign Up</h3>
                 <p><span>Don't Have an Account Yet?</span><a href="#" className="login-btn">Login</a></p>
-                <p><h5>You will receive a 4 digit code on your mobile number</h5></p>
+                <p><h5>You will receive a 4 digit code on your Email ID</h5></p>
                 <form>
                   <div className='form'>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                      <Form.Label>Enter Your Phone Number</Form.Label>
-                      <Form.Control type="email" placeholder="Enter Number" />
+                      <Form.Label>Enter Your Email Id</Form.Label>
+                      <Form.Control type="email" placeholder="Enter Email" />
                       &nbsp;
-                      <Button variant="danger" size="lg">
+                      <div className='continue-btn'> <Button variant="danger" size="lg" onClick={signemailClose}>
                         Continue
+                        <span><img src='./circle-right.png' /></span>
                       </Button>
+                      </div>
                     </Form.Group>
                   </div>
                 </form>
                 <p><span>By Proceeding I Agree to <a href="">Terms & Conditions</a>& <a href="">Privacy Policy</a></span></p>
-                <p><button>Sign up with Email</button></p>
+                <p className='signEmail-btn'><button onClick={signShow}>Sign up with Mobile</button></p>
+                <span className='close-btn' onClick={signemailClose}>X</span>
             </div>
           </div>
         </div>
@@ -53,4 +56,4 @@ const Signup = ({ signClose, signshow }) => {
   );
 }
 
-export default Signup;
+export default Signupemail;

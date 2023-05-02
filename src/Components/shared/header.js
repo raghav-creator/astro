@@ -1,16 +1,61 @@
 import React, { useState } from 'react';
-import Signup from '../shared/popup/signup';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Signupphone from './popup/signupphone';
 import Login from "../shared/popup/login";
-
+import Otp from './popup/otp';
+import Signupemail from './popup/signupemail';
+import Createpassword from './popup/createpassword';
+import Forgotpassword from './popup/forgotpassword';
 const Header=()=>
 {
 
   const [signshow, setsignShow] = useState(false);
+  const [signemailshow, setsignemailShow] = useState(false);
   const [loginshow, setloginShow] = useState(false);
-  const signClose = () => setsignShow(false);
-  const signShow = () => setsignShow(true);
+  const [otpshow, setotpShow] = useState(false);
+  const [passwordshow, setpasswordShow] = useState(false);
+  const [forgotpassshow, setforgotpassShow] = useState(false);
+  const signemailClose =() => {
+    setsignemailShow(false);
+  }
+  const signClose = () => {
+      setsignShow(false);
+      setotpShow(true);
+  }
+  const signemail=()=>
+  {
+    setsignShow(false);
+    setsignemailShow(true);
+  }
+  const signShow = () =>  { 
+    setsignemailShow(false);
+  setsignShow(true)
+  };
   const loginClose = () => setloginShow(false);
   const loginShow = () => setloginShow(true);
+  const otpClose = () => { 
+    setotpShow(false);
+    setpasswordShow(true);
+  }
+  const passwordClose =()=> 
+  {
+     setpasswordShow(false);
+  }
+  const forgotpassShow = () => 
+  {
+    setloginShow(false);
+  setforgotpassShow(true);
+  }
+ const forgotpassClose =()=> {
+  setforgotpassShow(false);
+ }
+ const forgotOtpopen =()=> {
+  setforgotpassShow(false);
+  setotpShow(true);
+ }
 
   return <>
   <nav className="navbar navbar-expand-lg navbar-light bg-light p-4">
@@ -45,8 +90,12 @@ const Header=()=>
     </ul>
   </div>
 </nav>
-<Signup signClose={signClose} signshow={signshow}/>
-<Login loginClose={loginClose} loginshow={loginshow} />
+<Signupphone signClose={signClose} signEmail={signemail} signshow={signshow}/>
+<Signupemail signShow={signShow} signemailshow={signemailshow} signemailClose={signemailClose}/>
+<Login loginClose={loginClose} loginshow={loginshow} forgotpassShow={forgotpassShow} />
+<Otp otpshow={otpshow} otpClose={otpClose}/>
+<Createpassword passwordshow={passwordshow} passwordClose={passwordClose} />
+<Forgotpassword  forgotpassshow={forgotpassshow} forgotpassClose={forgotpassClose} forgotOtpopen={forgotOtpopen} />
 </>
 }
  

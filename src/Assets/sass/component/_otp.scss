@@ -1,0 +1,62 @@
+.otp {
+    .content {
+        .left-content {
+            background: rgba(177, 164, 128, 0.22);
+            display: flex;
+            .logo {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .right-content {
+            .content-wrap {
+                p {
+                    span {
+                        color: $black;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+
+                .form {
+                    display: flex;
+                    justify-content: center;
+                    padding: 1rem 1rem;
+                    gap: 1rem;
+
+                    .field-wrap 
+                    {
+                        input 
+                        {
+                            border-radius: 8px;
+                            line-height: 2;
+                        }
+                    }
+                }
+                .continue-btn {
+                    display: flex;
+                    justify-content: center;
+                    padding-top:1.3rem;
+                    button {
+                        background: $red;
+                        border-radius: 10px;
+                        padding: 0.5rem 2rem;
+                        font-size: 14px;
+
+                        span {
+                            img {
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
