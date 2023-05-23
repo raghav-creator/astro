@@ -3,12 +3,17 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Signupphone from "./popup/signupphone";
-import Login from "../shared/popup/login";
-import Otp from "./popup/otp";
-import Signupemail from "./popup/signupemail";
-import Createpassword from "./popup/createpassword";
-import Forgotpassword from "./popup/forgotpassword";
+
+import userIcon from "../../Assets/imgs/user.png";
+import activeStatus from "../../Assets/imgs/EllipseAvtive.svg";
+
+import Otp from "../../Components/shared/popup/otp";
+import Createpassword from "../../Components/shared/popup/createpassword";
+import Forgotpassword from "../../Components/shared/popup/forgotpassword";
+import Login from "../../Components/shared/popup/login";
+import Signupphone from "../../Components/shared/popup/signupphone";
+import Signupemail from "../../Components/shared/popup/signupemail";
+
 const Header = () => {
   const [signshow, setsignShow] = useState(false);
   const [signemailshow, setsignemailShow] = useState(false);
@@ -64,11 +69,9 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#features" className="button button-chat">
-                {" "}
                 Chat with Astrologer
               </Nav.Link>
               <Nav.Link href="#pricing" className="button button-call">
-                {" "}
                 Call with Astrologer
               </Nav.Link>
               <Nav.Link href="" className="button-product">
@@ -84,96 +87,45 @@ const Header = () => {
                   Helpline number <span>+91-9650-511-113</span>
                 </span>
               </Nav.Link>
-              <Nav.Link
-                href="#deets"
-                className="button-signup"
-                onClick={signShow}
-              >
-                Sign up
-              </Nav.Link>
+
               <Nav.Link
                 eventKey={2}
                 href="#memes"
-                className="button-login"
+                className=" position-relative"
                 onClick={loginShow}
               >
-                Login
+                <img src={userIcon} className="loginHeaderImg" />{" "}
+                <img
+                  className="position-absolute activeStatusIcon"
+                  src={activeStatus}
+                />
               </Nav.Link>
-              {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {/* <nav className="navbar navbar-expand-lg navbar-light bg-light p-4">
-        <a className="navbar-brand" href="#">
-          <img src="./logo.svg" />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
+      <nav className="navbar navbar-expand-lg navbar-light bg-light p-4">
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <a className="nav-link button button-chat" href="#">
-                Chat with Astrologer
-              </a>
-            </li>
+          <ul className="navbar-nav ml-auto align-items-center">
+            {/* <li className="nav-item">
+        <a className="nav-link button-signup" onClick={signShow} href="#">Sign up</a>
+      </li> */}
             <li className="nav-item">
-              <a className="nav-link button button-call" href="#">
-                Call with Astrologer
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link button-product" href="#">
-                Products
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link button-services" href="#">
-                Services
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link button-helpline" href="#">
-                <span>
-                  Helpline number <span>+91-9650-511-113</span>
-                </span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link button-signup" onClick={signShow} href="#">
-                Sign up
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link button-login" onClick={loginShow} href="#">
-                Login
+              <a
+                className="nav-link position-relative "
+                onClick={loginShow}
+                href="#"
+              >
+                <img src={userIcon} className="loginHeaderImg" />{" "}
+                <img
+                  className="position-absolute activeStatusIcon"
+                  src={activeStatus}
+                />
               </a>
             </li>
           </ul>
         </div>
-      </nav> */}
+      </nav>
       <Signupphone
         signClose={signClose}
         signEmail={signemail}

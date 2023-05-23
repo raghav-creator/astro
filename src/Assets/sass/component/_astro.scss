@@ -1,40 +1,42 @@
-@import './../base/variable';
+@import "./../base/variable";
 
-.astro-wrap 
-{
-    padding:4rem 4rem;
-    padding-top: 3rem;
-    padding-bottom: 10rem;
-    background: linear-gradient(180deg, #DEB94E 0%, #F8EAA1 33.68%, #F8E998 44.1%, #DDB84E 100%);
-     
-    .heading 
-    {
-        justify-content: center;
-        display: flex;
-        font-size: 35px;
-        padding-bottom: 2rem;
-        font-weight: 600;
+.astro-wrap {
+  padding: 4rem 4rem;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  background: linear-gradient(
+    180deg,
+    #deb94e 0%,
+    #f8eaa1 33.68%,
+    #f8e998 44.1%,
+    #ddb84e 100%
+  );
+
+  .heading {
+    justify-content: center;
+    display: flex;
+    font-size: 35px;
+    padding-bottom: 2rem;
+    font-weight: 600;
+  }
+  .astro-form {
+    .mar10 {
+      margin-bottom: 1rem;
     }
-    .astro-form 
-    {
-        .mar10
-        {
-            margin-bottom: 1rem;
-        }
-        input {
-            border: 2px solid rgba(96, 95, 96, 0.5);
-            border-radius: 8px;
-            background: transparent;
-            color:$dark-grey;
-
-        }
-        select 
-        {
-            border: 2px solid rgba(96, 95, 96, 0.5);
-            border-radius: 8px;
-            background: transparent;
-            color:$dark-grey;
-
-        }
+    input {
+      border: 2px solid rgba(96, 95, 96, 0.5);
+      border-radius: 8px;
+      background: transparent;
+      color: $dark-grey;
     }
+    select {
+      border: 2px solid rgba(96, 95, 96, 0.5);
+      border-radius: 8px;
+      background: transparent;
+      color: $dark-grey;
+    }
+  }
+  .heading.noeffect::after {
+    display: none;
+  }
 }

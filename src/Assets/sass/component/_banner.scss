@@ -1,66 +1,80 @@
-@import './../base/variable';
+@import "./../base/variable";
 
 .banner-wrap {
-    .banner-wrap-content {
-        justify-content: center;
+  .banner-wrap-content {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 6rem;
+
+    p {
+      color: $orange;
+      font-size: 58px;
+      font-weight: 700;
+    }
+
+    .button-wrap {
+      display: flex;
+      .button-chat {
+        font-size: 12px;
+        color: $black;
+        margin-right: 1rem;
+        position: relative;
+        font-weight: 600;
+        align-items: center;
+        background: linear-gradient(
+          180deg,
+          #deb94e 0%,
+          #f8eaa1 33.68%,
+          #f8e998 44.1%,
+          #ddb84e 100%
+        );
+        padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+        border-radius: 25px;
+        border: 0;
         display: flex;
-        flex-direction: column;
-        padding-left: 6rem;
-
-        p {
-            color: $orange;
-            font-size: 58px;
-            font-weight: 700;
+        &::before {
+          content: url("./../../../../public/messages.png");
+          padding-right: 0.5rem;
+          margin-top: 5px;
         }
+      }
 
-        .button-wrap {
-            display: flex;
-            .button-chat {
-                font-size: 12px;
-                color: $black;
-                margin-right: 1rem;
-                position: relative;
-                font-weight: 600;
-                align-items: center;
-                background: linear-gradient(180deg, #DEB94E 0%, #F8EAA1 33.68%, #F8E998 44.1%, #DDB84E 100%);
-                padding: 0.2rem 1.5rem 0.2rem 1.5rem;
-                border-radius: 25px; 
-                border: 0;
-                display: flex;
-                &::before {
-                    content: url('./../../../../public/messages.png');
-                    padding-right: 0.5rem;
-                    margin-top:5px;
-                  }
-            }
+      .button-call {
+        font-size: 12px;
+        border: 0;
+        color: $black;
+        margin-right: 1rem;
+        position: relative;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(
+          180deg,
+          #deb94e 0%,
+          #f8eaa1 33.68%,
+          #f8e998 44.1%,
+          #ddb84e 100%
+        );
+        padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+        border-radius: 25px;
 
-            .button-call {
-                font-size: 12px;
-                border: 0;
-                color: $black;
-                margin-right: 1rem;
-                position: relative;
-                font-weight: 600;
-                display: flex;
-                align-items: center;
-                background: linear-gradient(180deg, #DEB94E 0%, #F8EAA1 33.68%, #F8E998 44.1%, #DDB84E 100%);
-                padding: 0.2rem 1.5rem 0.2rem 1.5rem;
-                border-radius: 25px; 
-
-                &::before {
-                    content: url('./../../../../public/call.png');
-                    padding-right:0.5rem;
-                    margin-top:5px;
-                  }
-            }
+        &::before {
+          content: url("./../../../../public/call.png");
+          padding-right: 0.5rem;
+          margin-top: 5px;
         }
+      }
     }
+  }
 
-    .banner-wrap-image {
-        padding-right:4rem;
-        img {
-            height: 450px;
-            width: 100%;
-        }
+  .banner-wrap-image {
+    padding-right: 4rem;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 350px;
+      
     }
+  }
 }

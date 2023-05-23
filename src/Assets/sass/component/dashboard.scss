@@ -1,0 +1,109 @@
+@import "../base/variable";
+.bodyStructure {
+  display: grid;
+  grid-template-columns: 1fr;
+  .sidebarArea {
+    max-width: 276px;
+    height: 100%;
+    display: none;
+  }
+  @media only screen and (min-width: 756px) {
+    .sidebarArea {
+      display: block;
+    }
+    grid-template-columns: 276px 1fr;
+  }
+}
+
+.astrologerProfile {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: 2px solid $light-yellow;
+  border-radius: 50%;
+}
+
+.navTopArea {
+  border-bottom: 2px solid $light-yellow;
+}
+.navbarVertical {
+  .nav {
+    .nav-link {
+      margin-right: 0px;
+      padding: 10px 2rem;
+      color: $white;
+      font-size: 16px;
+    }
+    .nav-link.active,
+    .nav-link:hover {
+      background: $light-yellow;
+      color: $black;
+    }
+  }
+}
+
+.pencileEdit {
+  position: absolute;
+  width: 20px;
+  right: 72px;
+  height: 20px;
+  bottom: 72px;
+}
+
+.cardShortOptions {
+  border: 2px solid $light-yellow;
+  border-radius: 20px;
+  background: $light-gray;
+}
+.cardShortOptions-img {
+  width: 90px;
+}
+
+.infoCards {
+  background: linear-gradient(103.67deg, #f05321 71.21%, #f76e21 98.6%);
+  border-radius: 20px;
+}
+
+.border-20 {
+  border-radius: 20px;
+}
+
+table.table {
+  thead {
+    tr {
+      th {
+        color: $gray-04;
+        padding: 1rem;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 1rem;
+        background: transparent;
+      }
+    }
+  }
+}
+
+.astroSwitch {
+  .form-check-input {
+    height: 30px;
+    width: 57px;
+    width: 4rem;
+  }
+}
+
+.navareaFixed {
+  top: 20px;
+}
+
+.tablecustom.card {
+  width: 92vw;
+
+  @media only screen and (min-width: 756px) {
+    width: 100%;
+  }
+}

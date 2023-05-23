@@ -1,4 +1,4 @@
-@import './../base/variable';
+@import "./../base/variable";
 
 .accordion {
   &-item {
@@ -7,16 +7,16 @@
   &-button {
     font-size: 24px;
     font-weight: 600;
-    color: #605F60;
-    border-bottom: 1px solid #ccc;
+    color: $dark-grey;
+    border-bottom: 1px solid $mediumGray;
 
     &:focus {
       outline: none;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid $mediumGray;
       box-shadow: none;
     }
     &::after {
-      background-image: url('./../../../../public/blackarrow.svg');
+      background-image: url("./../../../../public/blackarrow.svg");
       padding: 1rem;
       border: 2px solid;
       border-radius: 50%;
@@ -26,16 +26,16 @@
       transform: rotate(180deg);
     }
     &:not(.collapsed)::after {
-      background-image: url('./../../../../public/blackarrow.svg');
+      background-image: url("./../../../../public/blackarrow.svg");
       transform: unset;
     }
   }
   &-body {
-    background-color: #F5F5F5;
-    font-size: 20px;
+    background-color: $light-gray;
+    font-size: 16px;
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #605F60;
+  color: $dark-grey;
   background-color: $white;
 }

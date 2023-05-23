@@ -1,5 +1,13 @@
 @import './../base/variable';
 
+.navbar-nav {
+  a {
+    font-size: 12px;
+    padding: 0;
+    font-weight: normal;
+  }
+}
+
 .nav {
   &-link {
     font-size: 12px;
@@ -13,70 +21,129 @@
     &::before {
       padding-right: 0.5rem;
     }
-    
+
     &:hover {
       color: $dark-yellow;
     }
 
     &.button {
-      border: 2px solid $dark-yellow;
+      border: 1px solid $dark-yellow;
       border-radius: 30px;
 
       &:hover {
         transition: all 0.3s;
         color: $black;
-        background: linear-gradient(180deg, #DEB94E 0%, #F8EAA1 33.68%, #F8E998 44.1%, #DDB84E 100%);
+        //background: linear-gradient(180deg, #DEB94E 0%, #F8EAA1 33.68%, #F8E998 44.1%, #DDB84E 100%);
       }
 
-      
+
       &-chat {
         &::before {
-          content: url('./../../../../public/messages.png') ;
+          background-image: url('./../../../../public/messages.png');
+          content: "";
+          background-size: 17px 22px;
+          display: inline-block;
+          width: 17px;
+          height: 22px;
+          background-repeat: no-repeat;
+          margin-right: 6px;
         }
       }
+
       &-call {
         &::before {
-          content: url('./../../../../public/call.png') ;
+          background-image: url('./../../../../public/call.png');
+          content: "";
+          background-size: 17px 22px;
+          display: inline-block;
+          width: 17px;
+          height: 22px;
+          background-repeat: no-repeat;
+          margin-right: 6px;
         }
       }
+
       &-services {
         &::before {
-          content: url('./../../../../public/services.png') ;
+          background-image: url('./../../../../public/services.png');
+          content: "";
+          background-size: 25px 24px;
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          background-repeat: no-repeat;
+          margin-right: 6px;
         }
       }
+
       &-helpline {
         &::before {
-          content: url('./../../../../public/phone.png') ;
+          background-image: url('./../../../../public/phone.png');
+          content: "";
+          background-size: 17px 22px;
+          display: inline-block;
+          width: 17px;
+          height: 22px;
+          background-repeat: no-repeat;
+          margin-right: 6px;
         }
-        > span {
+
+        >span {
           display: flex;
           flex-flow: column;
         }
       }
+
       &-product {
         &::before {
-          content: url('./../../../../public/product.png') ;
+         
+          background-image: url('./../../../../public/product.png');
+          content: "";
+          background-size: 23px 22px;
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          background-repeat: no-repeat;
+          margin-right: 6px;
         }
       }
+
       &-signup {
         &::before {
-          content: url('./../../../../public/signup.svg') ;
+          background-image: url('./../../../../public/signup.svg');
+          content: "";
+          background-size: 22px 22px;
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          background-repeat: no-repeat;
+          margin-right: 6px;
         }
       }
+
       &-login {
         &::before {
-          content: url('./../../../../public/login.png') ;
+          background-image: url('./../../../../public/login.png');
+          content: "";
+          background-size: 22px 22px;
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          background-repeat: no-repeat;
+          margin-right: 6px;
         }
       }
     }
-    
+
   }
+
   &bar-brand {
     img {
-      width: 120px;
+      width: 90px;
     }
   }
-  &bar-nav   {
+
+  &bar-nav {
     // flex-grow: inherit;
     margin-left: auto;
   }
