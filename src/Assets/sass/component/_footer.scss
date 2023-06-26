@@ -1,14 +1,15 @@
-@import './../base/variable';
+@import "./../base/variable";
 
 footer {
   background-color: $light-brown;
   color: $white;
 }
+
 .footer {
   &-logo {
-    @include media-breakpoint-down(sm) {
-      text-align: center;
-    }
+    text-align: center;
+    // @include media-breakpoint-down(sm) {
+    // }
   }
   h5 {
     font-weight: 700;
@@ -16,7 +17,7 @@ footer {
   &-logo {
     padding-bottom: 2rem;
   }
-  
+
   li {
     padding-bottom: 1rem;
     display: flex;
@@ -32,19 +33,19 @@ footer {
     }
   }
 
-  &-address{
+  &-address {
     &::before {
-      content: url('./../../../../public/Region.svg') ;
+      content: url("./../../../../public/Region.svg");
     }
   }
-  &-phone{
+  &-phone {
     &::before {
-      content: url('./../../../../public/Phone.svg') ;
+      content: url("./../../../../public/Phone.svg");
     }
   }
-  &-email{
+  &-email {
     &::before {
-      content: url('./../../../../public/Mail.svg') ;
+      content: url("./../../../../public/Mail.svg");
     }
   }
   &-middle {

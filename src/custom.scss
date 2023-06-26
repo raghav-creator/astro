@@ -1,10 +1,41 @@
+<<<<<<< Updated upstream
 
+=======
+@import "Assets/sass/base/variable";
+/* make the customizations */
+$theme-colors: (
+  //   "info": tomato,
+  "danger": $red,
+  "light-brown": $light-brown,
+  "gray": $gray,
+  "lightgray": $mediumGray,
+  "light-yellow": $light-yellow,
+  "purple-dark": $purple-dark,
+  "white": $white,
+  "yellow-500": $yellow-500,
+  "green-two": $green-two,
+  "lightmud": $lightmud,
+  "disable-grey": $disable-grey
+);
+>>>>>>> Stashed changes
 // Import Bootstrap and its default variables
 body 
 {
     overflow-x:hidden;
 }
+<<<<<<< Updated upstream
 @import '~bootstrap/scss/bootstrap.scss';
 @import './Assets/sass/component/home';
 @import './Assets/sass/component/slider';
 @import './Assets/sass/component/common';
+=======
+
+@import "~bootstrap/scss/bootstrap.scss";
+@import "./Assets/sass/component/home";
+@import "./Assets/sass/component/slider";
+@import "./Assets/sass/component/common";
+
+.modal {
+  padding: 17px;
+}
+>>>>>>> Stashed changes

@@ -1,8 +1,55 @@
 @import './../base/variable';
 
 .banner-wrap {
+<<<<<<< Updated upstream
     .banner-wrap-content {
         justify-content: center;
+=======
+  .banner-wrap-content {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    // padding-left: 6rem;
+
+    p {
+      @media only screen and (max-width: 820px) {
+        font-size: 30px;
+      }
+
+      color: $orange;
+      font-size: 58px;
+      font-weight: 700;
+    }
+    .centerTitle {
+      text-align: center;
+      @media only screen and (min-width: 757px) {
+        font-size: 40px;
+      }
+      @media only screen and (min-width: 820px) {
+        text-align: left;
+      }
+    }
+
+    .button-wrap {
+      display: flex;
+      .button-chat {
+        font-size: 12px;
+        color: $black;
+        margin-right: 1rem;
+        position: relative;
+        font-weight: 600;
+        align-items: center;
+        background: linear-gradient(
+          180deg,
+          #deb94e 0%,
+          #f8eaa1 33.68%,
+          #f8e998 44.1%,
+          #ddb84e 100%
+        );
+        padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+        border-radius: 25px;
+        border: 0;
+>>>>>>> Stashed changes
         display: flex;
         flex-direction: column;
         padding-left: 6rem;
@@ -56,6 +103,7 @@
         }
     }
 
+<<<<<<< Updated upstream
     .banner-wrap-image {
         padding-right:4rem;
         img {
@@ -64,3 +112,10 @@
         }
     }
 }
+=======
+  .banner-wrap-image {
+    display: flex;
+    justify-content: center;
+  }
+}
+>>>>>>> Stashed changes

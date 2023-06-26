@@ -1,5 +1,6 @@
 @import './../base/variable';
 
+<<<<<<< Updated upstream
 .astro-wrap 
 {
     padding:4rem 4rem;
@@ -26,6 +27,17 @@
             border-radius: 8px;
             background: transparent;
             color:$dark-grey;
+=======
+.astro-wrap {
+  // padding: 4rem 4rem;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  background: linear-gradient(
+    180deg,
+    #f8e998 0%,
+    rgba(248, 234, 161, 0.36) 100%
+  );
+>>>>>>> Stashed changes
 
         }
         select 
@@ -37,4 +49,38 @@
 
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+    input {
+      border: 2px solid rgba(96, 95, 96, 0.5);
+      border-radius: 8px;
+
+      color: $dark-grey;
+    }
+    select {
+      border: 2px solid rgba(96, 95, 96, 0.5);
+      border-radius: 8px;
+      background-color: transparent;
+      color: $dark-grey;
+    }
+  }
+  .heading.noeffect::after {
+    display: none;
+  }
+
+  .searchFilter {
+    background-color: transparent !important;
+    background: url(../../imgs/searchicon.png) no-repeat;
+    background-position: right 16px center;
+    background-size: 22px;
+  }
+
+  .dropdownFilter {
+    background: url(../../imgs/Polygon2.png) no-repeat;
+    background-position: right 16px center;
+    background-size: 14px;
+    background-color: transparent !important;
+  }
+}
+>>>>>>> Stashed changes

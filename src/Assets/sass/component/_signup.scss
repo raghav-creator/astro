@@ -1,147 +1,151 @@
 @import "../base/variable";
 
 .modal-dialog {
-    max-width: 650px;
+  max-width: 650px;
 }
 
 .signpopup {
-    .content {
-        border: 1px solid $orange;
-        border-radius: 7px;
+  .content {
+    border: 1px solid $orange;
+    border-radius: 7px;
+    display: flex;
+
+    .left-content {
+      // width: 50%;
+      // padding: 3rem;
+      background: linear-gradient(
+        180deg,
+        #deb94e 0%,
+        #f8eaa1 33.68%,
+        #f8e998 44.1%,
+        #ddb84e 100%
+      );
+      .logo {
         display: flex;
+        justify-content: center;
 
-        .left-content {
-            width: 50%;
-            padding: 3rem;
-            background: linear-gradient(180deg, #DEB94E 0%, #F8EAA1 33.68%, #F8E998 44.1%, #DDB84E 100%);
-            .logo 
-            {
-                display: flex;
-                justify-content: center;
+        img {
+          width: 150px;
+        }
+      }
+      .icons {
+        display: flex;
+        padding-top: 3rem;
 
-                img {
-                    width: 150px;
-                }
+        .Instant-chat {
+          width: 50%;
+          border-right: 1px solid #605f60;
+
+          p {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 30px;
             }
-            .icons {
-                display: flex;
-                padding-top: 3rem;
-
-                .Instant-chat {
-                    width: 50%;
-                    border-right: 1px solid #605F60;
-
-                    p {
-                        display: flex;
-                        justify-content: center;
-
-                        img {
-                            width: 30px;
-                        }
-                    }
-                }
-
-                .Instant-phone {
-                    width: 50%;
-
-                    p {
-                        display: flex;
-                        justify-content: center;
-
-                        img {
-                            width: 30px;
-                        }
-                    }
-                }
-            }
-
+          }
         }
 
-        .right-content {
-            width: 50%;
-            padding: 2rem;
-            position: relative;
+        .Instant-phone {
+          width: 50%;
 
-            .content-wrap {
-                p {
-                    font-size: 12px;
+          p {
+            display: flex;
+            justify-content: center;
 
-                    h5 {
-                        font-size: 16px;
-                    }
-
-                    span {
-                        color: $dark-grey;
-
-                        a {
-                            color: $dark-grey;
-                        }
-                    }
-
-                    button {
-                        border: 1px solid $light-brown;
-                        border-radius: 25px;
-                        color: $light-brown;
-                        font-size: 1rem;
-                        padding: 0.3rem 2.5rem;
-                        background: #fff;
-                    }
-                }
+            img {
+              width: 30px;
             }
-
-            .login-btn {
-                color: $orange;
-                padding-left: 0.3rem;
-            }
-
-            .form {
-                label {
-                    font-size: 14px;
-                    color: $black;
-                }
-
-                input {
-                    border: 1px solid rgba(96, 95, 96, 0.5);
-                    border-radius: 10px;
-                    background: rgba(231, 231, 231, 0.5);
-                }
-
-                .continue-btn {
-                    display: flex;
-                    justify-content: center;
-
-                    button {
-                        background: $red;
-                        border-radius: 10px;
-                        padding: 0.3rem 2rem;
-                        font-size: 14px;
-
-                        span {
-                            img {
-                                width: 25px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .signEmail-btn {
-                display: flex;
-                justify-content: center;
-                margin-top: 1.5rem;
-            }
-
-            .close-btn {
-                background: $gray-01;
-                padding: 3px 7px;
-                border-radius: 10px;
-                font-size: 10px;
-                position: absolute;
-                top: 35px;
-                right: 20px;
-                color: $black;
-                cursor: pointer;
-            }
+          }
         }
+      }
     }
+
+    .right-content {
+      // width: 50%;
+      // padding: 2rem;
+      position: relative;
+
+      .content-wrap {
+        p {
+          font-size: 12px;
+
+          h5 {
+            font-size: 16px;
+          }
+
+          span {
+            color: $dark-grey;
+
+            a {
+              color: $dark-grey;
+            }
+          }
+
+          button {
+            border: 1px solid $light-brown;
+            border-radius: 25px;
+            color: $light-brown;
+            font-size: 1rem;
+            padding: 0.3rem 2.5rem;
+            background: #fff;
+          }
+        }
+      }
+
+      .login-btn {
+        color: $orange;
+        padding-left: 0.3rem;
+      }
+
+      .form {
+        label {
+          font-size: 14px;
+          color: $black;
+        }
+
+        input {
+          border: 1px solid rgba(96, 95, 96, 0.5);
+          border-radius: 10px;
+          background: rgba(231, 231, 231, 0.5);
+        }
+
+        .continue-btn {
+          display: flex;
+          justify-content: center;
+
+          button {
+            background: $red;
+            border-radius: 10px;
+            padding: 0.3rem 2rem;
+            font-size: 14px;
+
+            span {
+              img {
+                width: 25px;
+              }
+            }
+          }
+        }
+      }
+
+      .signEmail-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+      }
+
+      .close-btn {
+        background: $gray-01;
+        padding: 3px 7px;
+        border-radius: 10px;
+        font-size: 10px;
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        color: $black;
+        cursor: pointer;
+      }
+    }
+  }
 }

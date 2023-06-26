@@ -1,0 +1,122 @@
+@import "../../sass/base/variable";
+
+.loginHeaderImg {
+  width: 80px;
+}
+
+.activeStatusIcon {
+  top: 20px;
+  right: 0px;
+  left: unset;
+  @media only screen and (max-width: 480px) {
+    right: unest;
+    left: 83px;
+  }
+}
+
+.logincardContiner {
+  height: 80vh;
+}
+
+.loginContainer {
+  max-width: 744px !important;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.borderRounded-50 {
+  --bs-card-border-radius: 40px !important;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+.p-60 {
+  padding: 60px;
+}
+
+.btn-danger {
+  border-radius: 10px;
+}
+
+.wd-40 {
+  width: 36px;
+}
+// .form{
+
+//     .form-label {
+//       font-size: 25px;
+//     }
+// }
+
+.form-control {
+  background-color: $gray-02 !important;
+  border: 1px solid rgba(96, 95, 96, 0.5) !important;
+  height: 50px !important;
+}
+.editDetailsImgBox {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  .editDetailsImg {
+    width: 100%;
+  }
+}
+.text-darkGray {
+  color: $dark-grey;
+  font-size: 20px;
+  font-weight: 300;
+  b {
+    font-weight: 600;
+  }
+}
+.uploadphotoTxt {
+  font-weight: 600;
+  color: $dark-grey;
+  font-size: 20px;
+}
+
+.form-check {
+  .form-check-input {
+    accent-color: $orange;
+  }
+  .form-check-input:checked {
+    background-color: $orange;
+    border-color: $orange;
+  }
+  .form-check-label {
+    color: $gray-03;
+  }
+}
+
+.astroRegisterBtn.btn {
+  --bs-btn-border-radius: 30px;
+  --bs-btn-font-weight: 600;
+  --bs-btn-font-size: 16px;
+  --bs-btn-padding-y: 0.75rem;
+}
+
+.heightCheckbox {
+  height: 50px;
+}
+.textAreaHeight {
+  height: 190px !important;
+}
+
+.textAreaHeightmin {
+  height: 90px !important;
+}
+
+.gradientTwo {
+  background: radial-gradient(
+    63.54% 63.54% at 50.09% 36.46%,
+    rgba(248, 233, 152, 0) 3.77%,
+    rgba(143, 93, 0, 0.5) 100%
+  ) !important;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
