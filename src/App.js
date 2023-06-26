@@ -1,10 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-<<<<<<< Updated upstream
-import Home from './Components/Home/Home';
-
-=======
 import Home from "./Components/Home/Home";
 import Astro from "./Astrologer/shared/Astro";
 import AstroSkillDetails from "./Astrologer/shared/AstroSkillDetails";
@@ -19,18 +15,10 @@ import PaymentDetails from "./Astrologer/shared/PaymentDetails";
 import Callnow from "./Astrologer/shared/Callnow";
 import Chatnow from "./Astrologer/shared/Chatnow";
 import Thank from "./Astrologer/shared/Thank";
->>>>>>> Stashed changes
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-<<<<<<< Updated upstream
-      <Routes>
-        <Route path="/" element={<Home />}>
-        </Route>
-      </Routes>
-    </BrowserRouter>
-=======
         <Routes >
           <Route path="/" element={<Home />}></Route>
           <Route path="/callnow" element={<Callnow />}></Route>
@@ -53,7 +41,6 @@ function App() {
           <Route path="dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
->>>>>>> Stashed changes
     </div>
   );
 }
