@@ -1,7 +1,5 @@
 @import "./../base/variable";
 
-<<<<<<< Updated upstream
-=======
 .navbar-nav {
   a {
     font-size: 14px;
@@ -20,7 +18,6 @@
   }
 }
 
->>>>>>> Stashed changes
 .nav {
   &-link {
     font-size: 12px;
@@ -34,35 +31,22 @@
     &::before {
       padding-right: 0.5rem;
     }
-<<<<<<< Updated upstream
-    
-    &:hover {
-      color: $dark-yellow;
-    }
-=======
 
     // &:hover {
     //   color: $dark-yellow;
     // }
->>>>>>> Stashed changes
 
     &.button {
-      border: 2px solid $dark-yellow;
+      border: 1px solid $dark-yellow;
       border-radius: 30px;
       padding: 0.5rem;
 
       &:hover {
         transition: all 0.3s;
         color: $black;
-        background: linear-gradient(180deg, #DEB94E 0%, #F8EAA1 33.68%, #F8E998 44.1%, #DDB84E 100%);
+        //background: linear-gradient(180deg, #DEB94E 0%, #F8EAA1 33.68%, #F8E998 44.1%, #DDB84E 100%);
       }
 
-<<<<<<< Updated upstream
-      
-      &-chat {
-        &::before {
-          content: url('./../../../../public/messages.png') ;
-=======
       &-chat {
         &::before {
           background-image: url("./../../../../public/messages.png");
@@ -73,14 +57,11 @@
           height: 22px;
           background-repeat: no-repeat;
           margin-right: 6px;
->>>>>>> Stashed changes
         }
       }
+
       &-call {
         &::before {
-<<<<<<< Updated upstream
-          content: url('./../../../../public/call.png') ;
-=======
           background-image: url("./../../../../public/call.png");
           content: "";
           background-size: 17px 22px;
@@ -89,14 +70,11 @@
           height: 22px;
           background-repeat: no-repeat;
           margin-right: 6px;
->>>>>>> Stashed changes
         }
       }
+
       &-services {
         &::before {
-<<<<<<< Updated upstream
-          content: url('./../../../../public/services.png') ;
-=======
           background-image: url("./../../../../public/services.png");
           content: "";
           background-size: 25px 24px;
@@ -105,15 +83,11 @@
           height: 22px;
           background-repeat: no-repeat;
           margin-right: 6px;
->>>>>>> Stashed changes
         }
       }
+
       &-helpline {
         &::before {
-<<<<<<< Updated upstream
-          content: url('./../../../../public/phone.png') ;
-        }
-=======
           background-image: url("./../../../../public/phone.png");
           content: "";
           background-size: 17px 22px;
@@ -124,17 +98,14 @@
           margin-right: 6px;
         }
 
->>>>>>> Stashed changes
         > span {
           display: flex;
           flex-flow: column;
         }
       }
+
       &-product {
         &::before {
-<<<<<<< Updated upstream
-          content: url('./../../../../public/product.png') ;
-=======
           background-image: url("./../../../../public/product.png");
           content: "";
           background-size: 23px 22px;
@@ -143,14 +114,11 @@
           height: 22px;
           background-repeat: no-repeat;
           margin-right: 6px;
->>>>>>> Stashed changes
         }
       }
+
       &-signup {
         &::before {
-<<<<<<< Updated upstream
-          content: url('./../../../../public/signup.svg') ;
-=======
           background-image: url("./../../../../public/signup.svg");
           content: "";
           background-size: 22px 22px;
@@ -159,18 +127,11 @@
           height: 22px;
           background-repeat: no-repeat;
           margin-right: 6px;
->>>>>>> Stashed changes
         }
       }
+
       &-login {
         &::before {
-<<<<<<< Updated upstream
-          content: url('./../../../../public/login.png') ;
-        }
-      }
-    }
-    
-=======
           background-image: url("./../../../../public/login.png");
           content: "";
           background-size: 22px 22px;
@@ -182,20 +143,19 @@
         }
       }
     }
->>>>>>> Stashed changes
   }
+
   &bar-brand {
     img {
-      width: 120px;
+      width: 90px;
     }
   }
-  &bar-nav   {
+
+  &bar-nav {
     // flex-grow: inherit;
     margin-left: auto;
   }
 }
-<<<<<<< Updated upstream
-=======
 
 .dropdownBox {
   background: $white;
@@ -224,4 +184,3 @@
     }
   }
 }
->>>>>>> Stashed changes

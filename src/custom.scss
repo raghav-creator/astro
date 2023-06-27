@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-
-=======
 @import "Assets/sass/base/variable";
 /* make the customizations */
 $theme-colors: (
@@ -17,18 +14,11 @@ $theme-colors: (
   "lightmud": $lightmud,
   "disable-grey": $disable-grey
 );
->>>>>>> Stashed changes
 // Import Bootstrap and its default variables
 body 
 {
     overflow-x:hidden;
 }
-<<<<<<< Updated upstream
-@import '~bootstrap/scss/bootstrap.scss';
-@import './Assets/sass/component/home';
-@import './Assets/sass/component/slider';
-@import './Assets/sass/component/common';
-=======
 
 @import "~bootstrap/scss/bootstrap.scss";
 @import "./Assets/sass/component/home";
@@ -38,4 +28,3 @@ body
 .modal {
   padding: 17px;
 }
->>>>>>> Stashed changes

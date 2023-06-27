@@ -1,33 +1,5 @@
-@import './../base/variable';
+@import "./../base/variable";
 
-<<<<<<< Updated upstream
-.astro-wrap 
-{
-    padding:4rem 4rem;
-    padding-top: 3rem;
-    padding-bottom: 10rem;
-    background: linear-gradient(180deg, #DEB94E 0%, #F8EAA1 33.68%, #F8E998 44.1%, #DDB84E 100%);
-     
-    .heading 
-    {
-        justify-content: center;
-        display: flex;
-        font-size: 35px;
-        padding-bottom: 2rem;
-        font-weight: 600;
-    }
-    .astro-form 
-    {
-        .mar10
-        {
-            margin-bottom: 1rem;
-        }
-        input {
-            border: 2px solid rgba(96, 95, 96, 0.5);
-            border-radius: 8px;
-            background: transparent;
-            color:$dark-grey;
-=======
 .astro-wrap {
   // padding: 4rem 4rem;
   padding-top: 3rem;
@@ -37,21 +9,18 @@
     #f8e998 0%,
     rgba(248, 234, 161, 0.36) 100%
   );
->>>>>>> Stashed changes
 
-        }
-        select 
-        {
-            border: 2px solid rgba(96, 95, 96, 0.5);
-            border-radius: 8px;
-            background: transparent;
-            color:$dark-grey;
-
-        }
+  .heading {
+    justify-content: center;
+    display: flex;
+    font-size: 35px;
+    padding-bottom: 2rem;
+    font-weight: 600;
+  }
+  .astro-form {
+    .mar10 {
+      margin-bottom: 1rem;
     }
-<<<<<<< Updated upstream
-}
-=======
     input {
       border: 2px solid rgba(96, 95, 96, 0.5);
       border-radius: 8px;
@@ -83,4 +52,3 @@
     background-color: transparent !important;
   }
 }
->>>>>>> Stashed changes
